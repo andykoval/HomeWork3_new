@@ -50,6 +50,12 @@ public class HomeWork3new {
         //Задание 15
         System.out.println("\tЗадание 15: ");
         HomeWork3newMeth.Task15();
+        //Задание 16
+        System.out.println("\tЗадание 16: ");
+        HomeWork3newMeth.Task16();
+        //Задание 17
+        System.out.println("\tЗадание 17: ");
+        HomeWork3newMeth.Task17();
 
     }
 }

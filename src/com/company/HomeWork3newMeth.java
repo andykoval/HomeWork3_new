@@ -254,7 +254,7 @@ public class HomeWork3newMeth {
         int max = -99;
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 8; j++) {
-                arr[i][j] = -99 + (int) (Math.random() * 200);
+                arr[i][j] = -99 + (int) (Math.random() * 99);
                 System.out.print(arr[i][j] + " ");
                 if (arr[i][j] > max)
                     max = arr[i][j];
@@ -262,5 +262,50 @@ public class HomeWork3newMeth {
             System.out.print("\n");
         }
         System.out.println("Максимальный элемент массива: " + max);
+    }
+
+    public static void Task16() {
+        int[][] arr = new int[7][4];
+        int multModI = 1, multModIMax = 0, index = 0;
+        for (int i = 0; i < 7; i++) {
+            for (int j = 0; j < 4; j++) {
+                arr[i][j] = -5 + (int) (Math.random() * 11);
+                System.out.print(arr[i][j] + " ");
+                multModI *= Math.abs(arr[i][j]);
+            }
+            if (multModI > multModIMax) {
+                multModIMax = multModI;
+                index = i;
+            }
+            multModI = 1;
+            System.out.print("\n");
+        }
+        System.out.println("Индекс троки с максимальной мультипликацией по модулю элементов: " + index);
+    }
+
+    public static void Task17() {
+        int[][] arr = new int[6][7];
+        int[] arrRow = new int[7];
+        int maxI = 0, temp = 0;
+        System.out.println("Массив: ");
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 7; j++) {
+                arr[i][j] = (int) (Math.random() * 9);
+                System.out.print(arr[i][j] + " ");
+                arrRow[j] = arr[i][j];
+            }
+            System.out.print("\n");
+            Arrays.sort(arrRow);
+            for (int j = 0; j < 7; j++) {
+                arr[i][j] = arrRow[6 - j];
+            }
+        }
+        System.out.println("Массив с наибольшим элементом строки на первом месте: ");
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 7; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.print("\n");
+        }
     }
 }
