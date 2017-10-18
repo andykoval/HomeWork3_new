@@ -49,7 +49,7 @@ public class HomeWork3newMeth {
     public static void Task4() {
         int[] arr = new int[8];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int) (Math.random() * 10);
+            arr[i] = 1 + (int) (Math.random() * 10);
         }
         System.out.println(Arrays.toString(arr));
         for (int i = 1; i < arr.length / 2; i += 2) {
@@ -146,7 +146,7 @@ public class HomeWork3newMeth {
         int[] arr = new int[11];
         int count1 = 0, count2 = 0, count3 = 0;
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = -1 + (int) (Math.random() * 3);
+            arr[i] = -1 + (int) (Math.random() * 2);
             switch (arr[i]) {
                 case -1:
                     count1++;
@@ -178,7 +178,7 @@ public class HomeWork3newMeth {
         while (n % 2 != 0);
         int[] arr = new int[n];
         for (int i = 0; i < arr.length; i++)
-            arr[i] = -5 + (int) (Math.random() * 11);
+            arr[i] = -5 + (int) (Math.random() * 10);
         for (int i = 0; i < arr.length / 2; i++)
             sumArr1 += Math.abs(arr[i]);
         for (int i = arr.length - 1; i >= arr.length / 2; i--) {
@@ -280,7 +280,7 @@ public class HomeWork3newMeth {
             multModI = 1;
             System.out.print("\n");
         }
-        System.out.println("Индекс троки с максимальной мультипликацией по модулю элементов: " + index);
+        System.out.println("Индекс троки с максимальной мультипликацией элементов по модулю : " + index);
     }
 
     public static void Task17() {
@@ -306,6 +306,20 @@ public class HomeWork3newMeth {
                 System.out.print(arr[i][j] + " ");
             }
             System.out.print("\n");
+        }
+    }
+
+    public static void Task18() {
+        int arr1num[] = new int[15];
+        int arr2num[] = new int[15];
+        int tempNum1 = 0, tempNum2 = 0;
+        //       ?int arr1num =0, arr2num = 0;
+        for (int i = 0; i < 15; i++) {
+            arr1num[i] = 2 + (int) (Math.random() * 7);
+            arr2num[i] = 2 + (int) (Math.random() * 7);
+            tempNum1 = arr1num[i];
+            tempNum2 = arr2num[i];
+            System.out.println("Пример для " + (i + 1) + " ученика: " + arr1num[i] + "*" + arr2num[i]);
         }
     }
 }
