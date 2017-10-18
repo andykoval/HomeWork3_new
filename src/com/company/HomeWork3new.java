@@ -43,6 +43,10 @@ public class HomeWork3new {
         //Задание 13
         System.out.println("\tЗадание 13: ");
         HomeWork3newMeth.Task13();
+        //Многомерные массивы
+        //Задание 14
+        System.out.println("\tЗадание 14: ");
+        HomeWork3newMeth.Task14();
 
     }
 }

@@ -237,4 +237,15 @@ public class HomeWork3newMeth {
         }
         System.out.println("Измененный массив: " + Arrays.toString(arrNew));
     }
+
+    public static void Task14() {
+        int[][] arr = new int[8][5];
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 5; j++) {
+                arr[i][j] = 10 + (int) (Math.random() * 99);
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.print("\n");
+        }
+    }
 }
