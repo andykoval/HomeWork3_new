@@ -317,8 +317,8 @@ public class HomeWork3newMeth {
         for (int i = 0; i < 15; i++) {
             arr1num[i] = 2 + (int) (Math.random() * 7);
             arr2num[i] = 2 + (int) (Math.random() * 7);
-            tempNum1 = arr1num[i];
-            tempNum2 = arr2num[i];
+//            String tempNum = String.valueOf(arr1num[i]) + String.valueOf(arr2num[i]);
+//            String tempNumRev = String.valueOf(arr2num[i]) + String.valueOf(arr1num[i]);
             System.out.println("Пример для " + (i + 1) + " ученика: " + arr1num[i] + "*" + arr2num[i]);
         }
     }
