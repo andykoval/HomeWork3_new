@@ -47,6 +47,9 @@ public class HomeWork3new {
         //Задание 14
         System.out.println("\tЗадание 14: ");
         HomeWork3newMeth.Task14();
+        //Задание 15
+        System.out.println("\tЗадание 15: ");
+        HomeWork3newMeth.Task15();
 
     }
 }

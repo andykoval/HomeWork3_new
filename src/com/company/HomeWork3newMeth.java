@@ -248,4 +248,19 @@ public class HomeWork3newMeth {
             System.out.print("\n");
         }
     }
+
+    public static void Task15() {
+        int[][] arr = new int[5][8];
+        int max = -99;
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 8; j++) {
+                arr[i][j] = -99 + (int) (Math.random() * 200);
+                System.out.print(arr[i][j] + " ");
+                if (arr[i][j] > max)
+                    max = arr[i][j];
+            }
+            System.out.print("\n");
+        }
+        System.out.println("Максимальный элемент массива: " + max);
+    }
 }
