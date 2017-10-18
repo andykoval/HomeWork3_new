@@ -146,7 +146,7 @@ public class HomeWork3newMeth {
         int[] arr = new int[11];
         int count1 = 0, count2 = 0, count3 = 0;
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = -1 + (int) (Math.random() * 2);
+            arr[i] = -1 + (int) (Math.random() * 3);
             switch (arr[i]) {
                 case -1:
                     count1++;
@@ -223,7 +223,7 @@ public class HomeWork3newMeth {
         while (n <= 3);
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
-            arr[i] = (int) (Math.random() * (n + 1));
+            arr[i] = (int) (Math.random() * n);
         }
         System.out.println("Исходный массив: " + Arrays.toString(arr));
         for (int temp : arr)
@@ -242,7 +242,7 @@ public class HomeWork3newMeth {
         int[][] arr = new int[8][5];
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 5; j++) {
-                arr[i][j] = 10 + (int) (Math.random() * 99);
+                arr[i][j] = 10 + (int) (Math.random() * 89);
                 System.out.print(arr[i][j] + " ");
             }
             System.out.print("\n");
@@ -254,7 +254,7 @@ public class HomeWork3newMeth {
         int max = -99;
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 8; j++) {
-                arr[i][j] = -99 + (int) (Math.random() * 99);
+                arr[i][j] = -99 + (int) (Math.random() * 200);
                 System.out.print(arr[i][j] + " ");
                 if (arr[i][j] > max)
                     max = arr[i][j];
